@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    
+    <title>Bootstrap 101 Template</title>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <script src="js/jquery1.12.4.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <style type="text/css">
+      header {padding-bottom:38%;background-size: 100% 100%;background-image:url(images/15.jpg);background-repeat:no-repeat;min-height:150px;}
+      footer{width:100%; padding:1em 0 1em 0; text-align:center; background-image: linear-gradient(90deg,#f79533 0,#f37055 15%,#ef4e7b 30%,#a166ab 44%,#5073b8 58%,#1098ad 72%,#07b39b 86%,#6dba82 100%) !important;margin-top:3%;}
+      main .media div{min-width:325px}
+      #aside{padding-top:2%}
+      #aside ul li{height:120px; width:300px;padding: 10px;  min-width:325px; border-top:2px solid #e5e5e5;}
+      .cover{opacity: 0; height: 100%; position: absolute; text-decoration: none; width: 100%; max-width: 100%; z-index: 3;top: 0;left: 0;}
+      .style{margin-top:5%}
+      ul.style li {margin: 0; padding: 2em 0em 1.8em 0em; border-top: 1px solid #ECECEC;}
+      ul.style li:first-child{padding-top: 0; border-top: none;}
+      ul.style img {float: left;margin-right: 20px;}  
+      ul.style .posted {padding: 0em 0em 1em 0em; letter-spacing: 1px; text-transform: uppercase; font-size: 8pt; color: #A2A2A2;}
+      ul.style .first {padding-top: 0px;border-top: none;}
+      figure p{padding:5px;}
+      figure a{text-decoration:none;color: #555555}
+      figure a:hover{text-decoration:none;color:#1AE6E6}
+    </style>
+  </head>
+  <body>
+    <main>
+    <header>
+      <nav class="navbar navbar-default" style="position:fixed;top: 0;left: 0;width: 100%;opacity:0.6; z-index:99">
+      <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <!-- sr-only Bootstrap的辅助类；代表元素只在屏幕阅读器中显示：sc (screen-reader)  -->
+            <span class="sr-only">Toggle navigation</span>
+            <!-- icon-bar 屏幕宽度小于一定程度时，导航栏变为可折叠形式 -->
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="Home.html">ZYZ</a>
+        </div>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#">Test<span class="sr-only">(current)</span></a></li>
+          </ul>
+
+          <ul class="nav navbar-nav navbar-right">
+            <li class="active"><a href="Home.html">Home</a></li>
+            <li><a href="Archievs.html">Archievs</a></li>
+            <li><a href="Album.html">Album</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">About<span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Action</a></li>
+                <li><a href="#">Another action</a></li>
+                <li><a href="#">Something else here</a></li>
+                <!-- role是html5中的新标签，增加语义性 -->
+                <li role="separator" class="divider"></li>
+                <li><a href="#">Separated link</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+    </nav>
+    </header>
+
+    <div class="col-xs-12 col-sm-7 col-md-7 col-md-offset-1" style="padding-top: 3%">
+      <section>
+             <h2>Take your sweet time</h2>
+              <ul class="style">
+                <li>
+                  <p class="posted">August 11, 2002  |  (10 )  Comments</p>
+                  <img src="images/pic1.jpg" alt="" />
+                  <p class="text">Nullam non wisi a sem eleifend. Donec mattis libero eget urna. Pellentesque viverra enim.</p>
+                </li>
+                <li>
+                  <p class="posted">August 11, 2002  |  (10 )  Comments</p>
+                  <img src="images/pic2.jpg" alt="" />
+                  <p class="text">Nullam non wisi a sem eleifend. Donec mattis libero eget urna. Pellentesque viverra enim.</p>
+                </li>
+                <li>
+                  <p class="posted">August 11, 2002  |  (10 )  Comments</p>
+                  <img src="images/pic3.jpg" alt="" />
+                  <p class="text">Nullam non wisi a sem eleifend. Donec mattis libero eget urna. Pellentesque viverra enim.</p>
+                </li>
+              </ul>
+            </section>
+    </div>
+
+    <div id="aside" class="col-xs-12 col-sm-4 col-md-4" style="padding-top: 4%">
+      <iframe name="weather_inc" src="http://i.tianqi.com/index.php?c=code&id=2&num=2" style="margin-bottom:10px;width:100%;min-width:325px" height="70" frameborder="0" marginwidth="0" marginheight="0" scrolling="no"></iframe>
+      
+      <ul class="list-unstyled">
+           <li>
+             <a class="" href="pages_2.html" style="text-decoration:none;color: inherit;">
+                <img class="pull-left img-responsive" src="images/111.jpg"  alt="媒体对象" width=80>
+             <span>
+                <h4 class="media-heading">Soledad— Westlife</h4>
+                <p> The sun again will shine on you. Whatever you do. Take your sweet sweet time. A little space to breathe<p>
+             </span></a>
+          </li>
+           <li>
+             <a class="" href="pages_3.html"  style="text-decoration:none;color: inherit;">
+                <img class="pull-left img-responsive" src="images/111.jpg"  alt="媒体对象" width=80>
+             
+             <span>
+                <h4 class="media-heading">안녕,곰인형— 안지영</h4>
+                <p> The sun again will shine on you. Whatever you do. Take your sweet sweet time. A little space to breathe<p>
+             </span></a>
+          </li>
+          <li>
+             <a class="pull-left" href="pages_1.html"  style="text-decoration:none;color: inherit;">
+                <img class="pull-left img-responsive" src="images/111.jpg"  alt="媒体对象" width=80 >
+             <span>
+                <h4 class="media-heading">起风了—买辣椒也用券</h4>
+                <p> The sun again will shine on you. Whatever you do. Take your sweet sweet time.A little space to breathe <p>
+             </span></a>
+          </li>
+      </ul> 
+    </div> <!-- /.aside -->
+    <div  class="col-xs-12 col-sm-12 col-md-12" style="padding-left:10%;padding-right:10%;">
+      <div class="col-xs-12 col-sm-4 col-md-4" style="overflow: hidden;text-align:center;padding:5px">
+          <figure>
+             <a href="pages_1.html">
+                <span class="cover"></span>
+                <img class="img-responsive" src="images/30.jpg" alt="" style="width:100%;position:relative;">
+                <h4>起风了— 买辣椒也用券</h4>
+              </a>
+              <p style="text-align:left;">词：米果 曲：高桥优  这一路上走走停停的. 顺着少年漂流的痕迹的. 迈出车站的前一刻. 竟有些犹豫的. 不禁笑这近乡情怯. 仍无可避免. 而长野的天. 依旧那么暖. 风吹起了从前. 从前初识这世间. 万般流连. 看着天边似在眼前的. 也甘愿赴汤蹈火去走它一遍. 如今走过这世间. 此时万般流连的. 翻过岁月不同侧脸. 措不及防闯入你的笑颜的. 我曾难自拔于世界之大吧. 也沉溺于其中梦话. 不得真假 不做挣扎 不惧笑话. 我曾将青春翻涌成她. 也曾指尖弹出盛夏. 心之所动 且就随缘去吧. 逆着光行走 任风吹雨打的. 短短的路走走停停. </p>
+          </figure>
+      </div>
+      <div class="col-xs-12 col-sm-4 col-md-4" style="overflow: hidden;text-align:center;padding:5px">
+          <figure>
+             <a href="pages_3.html">
+                <span class="cover"></span>
+                <img class="img-responsive" src="images/31.jpg" alt="" style="width:100%;position:relative;">
+                <h4>안녕,곰인형— 안지영</h4>
+            </a>
+                <p style="text-align:left;">Hey teddy bear 넌 잘 지내. 니가 없는 이 세상은 내겐 겨울과 같았어. Hey teddy bear 보고 싶어.  잠든 니 곁에 나 살며시 누워 널 그리곤 해. 니가 없던 시간들에 나 소원을 빌었어. 네게 숨을 불어 넣어달라고. 내가 잠든 시간들에 내게 살며시 다가와. 안녕이라고 말했어. Hey teddy bear 안녕 넌 잘 지내지. 나 너 없는 지금도 가끔씩 널 그리워해. Hey teddy bear 안녕 넌 잘 지낼 테지만. 니가 없는 지금도 아직도 널 그리곤 해. Hey teddy bear. Hey teddy bear 난 잘 지내. 니가 없이도 난 이렇게 웃어 널 그리곤 해.</p>
+          </figure>
+      </div>
+      <div class="col-xs-12 col-sm-4 col-md-4" style="overflow: hidden;text-align:center;padding:5px;">
+          <figure>
+             <a href="pages_2.html">
+                <span class="cover"></span>
+                <img class="img-responsive" src="images/32.jpg" alt="" style="width:100%;position:relative;">
+                <h4>Soledad— Westlife</h4>
+            </a>
+                <p style="text-align:left;">If only you could see the tears.  In the world you left behind.  If only you could heal my heart.  Just one more time.  Even when I close my eyes.  There's an image of your face.  And once again I come to realise.  You're a loss I can't replace Soledad.  It's a keeping for the lonely.  Since the day that you were gone.  Why did you leave me.  Soledad.  In my heart you were the only.  And your memory lives on.  Why did you leave me.  Soledad.  Walking down the streets.  Of Nothingville.  Where our love was young and free.</p>
+          </figure>
+      </div>
+    </div>
+    </div> <!-- /.container -->
+  <footer class="col-xs-12 col-sm-12 col-md-12">Author ZYZ</footer>
+</main>
+  </body>
+</html>

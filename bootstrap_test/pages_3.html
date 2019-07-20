@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    
+    <title>Pages</title>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <script src="js/jquery1.12.4.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <style type="text/css">
+      
+      header{margin-bottom:0.8%;height:auto}
+      footer{width:100%; padding:1em 0 1em 0; text-align:center; background-image: linear-gradient(90deg,#f79533 0,#f37055 15%,#ef4e7b 30%,#a166ab 44%,#5073b8 58%,#1098ad 72%,#07b39b 86%,#6dba82 100%) !important;}
+      #myCarousel img{width:100%;min-height:200px;max-height:577px}
+      .cover{opacity: 0; height: 100%; position: absolute; text-decoration: none; width: 100%; max-width: 100%; z-index: 99;top: 0;left: 0;}
+      #ablum div{margin-bottom: 2px}
+      .cover:hover{opacity:0.15;background: rgba(28,28,28,0.7);}
+      .page11{text-align:center; padding:1%}
+      #p_sch{position:fixed; bottom:3%; left:3%;line-height: 27px;z-index: 12; font-family: 'Vidaloka', serif;}
+      #Arc_main{padding-right:8%;padding-left:8%}
+    </style>
+    <script>
+      $(document).scroll(function(){
+      var d_h = $(document).height();
+      var c_h = $(window).height();
+      var c_t_h = $(window).scrollTop();
+      var schedule = c_t_h / (d_h-c_h-0.5);
+      var str=Number(schedule*100).toFixed();
+            str+="%";
+      $("#p_sch").text(str);
+      });
+    </script>
+  </head>
+
+   <body>        
+      <main>
+            <header>
+            <div id="myCarousel" class="carousel slide" style="width:100%;">
+                  <!-- 轮播（Carousel）指标 -->
+                  <ol class="carousel-indicators">
+                     <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                     <li data-target="#myCarousel" data-slide-to="1"></li>
+                     <li data-target="#myCarousel" data-slide-to="2"></li>
+                  </ol>   
+                  <!-- 轮播（Carousel）项目 -->
+                  <div class="carousel-inner">
+                     <div class="item active">
+                        <a href="#"><img src="images/15.jpg" alt="First slide"></a>
+                     </div>
+                     <div class="item">
+                        <a href="#"><img src="images/16.jpg" alt="Second slide">
+                        <div class="carousel-caption sr-only">标题</div>
+                        </a>
+                     </div>
+                     <div class="item">
+                        <a href="#"><img src="images/17.jpg" alt="Third slide"></a>
+                     </div>
+                  </div>
+                  <!-- 轮播（Carousel）导航 -->
+                  <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+                      <span class="sr-only">Previous</span>
+                  </a>
+                  <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+                      <span class="sr-only">Next</span>
+                  </a>
+            </div>
+
+            <nav class="navbar navbar-default" style="position:fixed;top: 0;left: 0;width: 100%;opacity:0.8;">
+            <div class="container-fluid">
+              <!-- Brand and toggle get grouped for better mobile display -->
+              <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                  <!-- sr-only Bootstrap的辅助类；代表元素只在屏幕阅读器中显示：sc (screen-reader)  -->
+                  <span class="sr-only">Toggle navigation</span>
+                  <!-- icon-bar 屏幕宽度小于一定程度时，导航栏变为可折叠形式 -->
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="Home.html">ZYZ</a>
+              </div>
+              <!-- Collect the nav links, forms, and other content for toggling -->
+              <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                  <li class="active"><a href="#">Test<span class="sr-only">(current)</span></a></li>
+                </ul>
+
+                <ul class="nav navbar-nav navbar-right">
+                  <li><a href="Home.html">Home</a></li>
+                  <li><a href="Archievs.html">Archievs</a></li>
+                  <li><a href="Album.html">Album</a></li>
+                  <li class="dropdown">
+                    <a href="#" class="dropdown-toggle active" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">About<span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                      <li><a href="#">Action</a></li>
+                      <li><a href="#">Another action</a></li>
+                      <li><a href="#">Something else here</a></li>
+                      <!-- role是html5中的新标签，增加语义性 -->
+                      <li role="separator" class="divider"></li>
+                      <li><a href="#">Separated link</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </div><!-- /.navbar-collapse -->
+            </div><!-- /.container-fluid -->
+            </nav>
+          </header>
+          <div id="Arc_main" class="col-xs-12 col-sm-12 col-md-12" style="z-index:-1">
+            <div class="page-header">
+               <h1 class="text-center">안녕,곰인형
+                  <small>— 脸红的思春期</small>
+               </h1>
+            </div>
+            <div class="text-center" style="word-spacing:0.3em;line-height:1.6em">
+            作曲 : 안지영<br>作词 : 안지영<br>Hey teddy bear 넌 잘 지내<br>Hey teddy bear 你过得好吗<br>니가 없는 이 세상은 내겐 겨울과 같았어<br>没有你的世界对我而言就像是寒冬<br>Hey teddy bear 보고 싶어<br>Hey teddy bear 我好想你<br>잠든 니 곁에 나 살며시 누워 널 그리곤 해<br>轻轻躺在熟睡的你身边思念着你<br>니가 없던 시간들에 나 소원을 빌었어<br>在没有你的日子里 我许了愿<br>네게 숨을 불어 넣어달라고<br>希望你能呼吸<br>내가 잠든 시간들에 내게 살며시 다가와<br>在我熟睡的时候 悄悄向我走来<br>안녕이라고 말했어<br>对我说你好<br>Hey teddy bear 안녕 넌 잘 지내지<br>Hey teddy bear 你好呀 过得还好吧<br>나 너 없는 지금도 가끔씩 널 그리워해<br>我在没有你的此刻也依旧想念着你<br>Hey teddy bear 안녕 넌 잘 지낼 테지만<br>Hey teddy bear 你好呀 虽然你好像过得很好<br>니가 없는 지금도 아직도 널 그리곤 해<br>我在没有你的此刻也依旧想念着你<br>Hey teddy bear<br><br>Hey teddy bear<br><br>Hey teddy bear<br><br>Hey teddy bear<br><br>Hey teddy bear 난 잘 지내<br>Hey teddy bear 我过得很好<br>니가 없이도 난 이렇게 웃어 널 그리곤 해<br>即使没有你我也能像现在这样笑着 想念着你<br>니가 있던 시간들이 내게서 멀어질 때<br>曾经有你的那些时间逐渐离我远去时<br>더는 망설이지 말아 달라고<br>再也不要犹豫<br>내가 잠든 시간들에 내게 살며시 다가와<br>在我熟睡的时候 悄悄向我走来<br>안녕이라고 말해줘 Hey teddy bear<br>对我说你好 Hey teddy bear<br>Hey teddy bear 안녕 넌 잘 지내지<br>Hey teddy bear 你好呀 过得还好吧<br>난 너 없는 지금도 가끔씩 널 그리워해<br>我在没有你的此刻也依旧想念着你<br>Hey teddy bear 안녕 넌 잘 지낼 테지만<br>Hey teddy bear 你好呀 虽然你好像过得很好<br>니가 없는 지금도 아직도 널 그리곤 해<br>我在没有你的此刻也依旧想念着你<br>제발 내게 말해줘 네 목소리를 들려줘<br>拜托对我说 让我能听到你的声音<br>넌 어디쯤 있는지<br>你在哪里呢<br>매일은 바라지 않을게<br>不奢望每天<br>가끔씩 아니 한 번씩<br>偶尔 不 就一次<br>내가 잘 지내는지 지냈는지<br>我过得好吗 过得好吗<br>나를 보러 와줘<br>来看看我吧<br>Hey teddy bear<br><br>Hey teddy bear<br><br>Hey teddy bear<br><br>Hey teddy bear<br><br>Hey teddy bear<br><br>Hey teddy bear<br><br>Hey teddy bear
+            </div>
+
+           <div class="col-xs-12 col-sm-12 col-md-12 page11">
+              <ul class="pager">
+                <li class="previous"><a href="#">&larr; Previous</a></li>
+                <li class="next"><a href="#">Next &rarr;</a></li>
+              </ul>
+           </div>
+         </div>
+
+         
+         <h2 id="p_sch">0%<h2>
+         <footer class="col-xs-12 col-sm-12 col-md-12">Author ZYZ</footer>
+      </main>
+   </body>
+</html>
+
